@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:StaticLibrarySample/StaticLibrarySample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FrameworkSample/FrameworkSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ImportLinkSample.xcodeproj">
+   </FileRef>
+</Workspace>

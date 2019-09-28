@@ -13,7 +13,24 @@
 		D42C25D8233EE2DC002567A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42C25D7233EE2DC002567A0 /* Assets.xcassets */; };
 		D42C25DB233EE2DC002567A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42C25DA233EE2DC002567A0 /* Preview Assets.xcassets */; };
 		D42C25DE233EE2DC002567A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C25DC233EE2DC002567A0 /* LaunchScreen.storyboard */; };
+		D4608E77233F3DBB0027876C /* FrameworkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4608E73233F2DCD0027876C /* FrameworkSample.framework */; };
+		D4608E78233F3DBB0027876C /* FrameworkSample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4608E73233F2DCD0027876C /* FrameworkSample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4608E7B233F3DBF0027876C /* libStaticLibrarySample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4608E7A233F3DBF0027876C /* libStaticLibrarySample.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4608E79233F3DBB0027876C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D4608E78233F3DBB0027876C /* FrameworkSample.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D42C25CE233EE2D9002567A0 /* ImportLinkSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImportLinkSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		D42C25DA233EE2DC002567A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D42C25DD233EE2DC002567A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D42C25DF233EE2DC002567A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4608E73233F2DCD0027876C /* FrameworkSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FrameworkSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4608E7A233F3DBF0027876C /* libStaticLibrarySample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStaticLibrarySample.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4608E77233F3DBB0027876C /* FrameworkSample.framework in Frameworks */,
+				D4608E7B233F3DBF0027876C /* libStaticLibrarySample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,7 @@
 			children = (
 				D42C25D0233EE2D9002567A0 /* ImportLinkSample */,
 				D42C25CF233EE2D9002567A0 /* Products */,
+				D4608E72233F2DCD0027876C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +97,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D4608E72233F2DCD0027876C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4608E7A233F3DBF0027876C /* libStaticLibrarySample.a */,
+				D4608E73233F2DCD0027876C /* FrameworkSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +116,7 @@
 				D42C25CA233EE2D9002567A0 /* Sources */,
 				D42C25CB233EE2D9002567A0 /* Frameworks */,
 				D42C25CC233EE2D9002567A0 /* Resources */,
+				D4608E79233F3DBB0027876C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
